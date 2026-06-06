@@ -18,6 +18,7 @@ from launch.substitutions import (
 def generate_launch_description():
     ur_type = LaunchConfiguration("ur_type")
     robot_ip = LaunchConfiguration("robot_ip")
+    use_mock_hardware = LaunchConfiguration("use_mock_hardware")
     declared_arguments = []
     declared_arguments.append(
         DeclareLaunchArgument(
@@ -45,7 +46,14 @@ def generate_launch_description():
         )
     )
     declared_arguments.append(
-        DeclareLaunchArgument("launch_rviz", default_value="true", description="Launch RViz?")
+        DeclareLaunchArgument("launch_rviz", default_value="false", description="Launch RViz?")
+    )
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "use_mock_hardware",
+            default_value="true",
+            description="Start robot with mock hardware mirroring command to its states.",
+        )
     )
 
     return LaunchDescription(
@@ -66,6 +74,7 @@ def generate_launch_description():
                 launch_arguments={
                     "ur_type": ur_type,
                     "robot_ip": robot_ip,
+                    "use_mock_hardware": use_mock_hardware,
                     "tf_prefix": "",
                     "rviz_config_file": PathJoinSubstitution(
                         [
