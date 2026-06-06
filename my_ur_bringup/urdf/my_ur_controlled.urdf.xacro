@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot name="my_robot_cell" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="my_ur" xmlns:xacro="http://ros.org/wiki/xacro">
 
   <!--First, include the macro from our custom description-->
   <xacro:include filename="$(find my_ur_description)/urdf/my_ur_macro.xacro"/>

@@ -4,6 +4,6 @@ from moveit_configs_utils.launches import generate_moveit_rviz_launch
 
 def generate_launch_description():
     moveit_config = MoveItConfigsBuilder(
-        "my_robot_cell", package_name="my_ur_moveit_config"
+        "my_ur", package_name="my_ur_moveit_config"
     ).to_moveit_configs()
     return generate_moveit_rviz_launch(moveit_config)

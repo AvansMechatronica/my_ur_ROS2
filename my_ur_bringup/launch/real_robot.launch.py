@@ -66,7 +66,7 @@ def generate_launch_description():
                 launch_arguments={
                     "ur_type": ur_type,
                     "robot_ip": robot_ip,
-                    "tf_prefix": [LaunchConfiguration("ur_type"), "_"],
+                    "tf_prefix": "",
                     "rviz_config_file": PathJoinSubstitution(
                         [
                             FindPackageShare("my_ur_description"),
