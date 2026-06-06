@@ -1,10 +1,10 @@
-cmake_minimum_required(VERSION 3.5)
-project(my_ur_description)
+cmake_minimum_required(VERSION 3.8)
+project(my_ur_bringup)
 
 find_package(ament_cmake REQUIRED)
 
 install(
-  DIRECTORY launch rviz urdf
+  DIRECTORY launch config urdf
   DESTINATION share/${PROJECT_NAME}
 )
 
