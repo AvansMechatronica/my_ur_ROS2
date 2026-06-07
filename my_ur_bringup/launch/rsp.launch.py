@@ -49,6 +49,7 @@ def generate_launch_description():
 
     use_mock_hardware = LaunchConfiguration("use_mock_hardware")
     mock_sensor_commands = LaunchConfiguration("mock_sensor_commands")
+    gripper_com_port = LaunchConfiguration("gripper_com_port")
 
     headless_mode = LaunchConfiguration("headless_mode")
 
@@ -81,6 +82,9 @@ def generate_launch_description():
             " ",
             "headless_mode:=",
             headless_mode,
+            " ",
+            "gripper_com_port:=",
+            gripper_com_port,
         ]
     )
     robot_description = {"robot_description": robot_description_content}
@@ -150,6 +154,13 @@ def generate_launch_description():
             "headless_mode",
             default_value="false",
             description="Enable headless mode for robot control",
+        )
+    )
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "gripper_com_port",
+            default_value="/dev/ttyUSB0",
+            description="Serial port used by the gripper hardware interface.",
         )
     )
 

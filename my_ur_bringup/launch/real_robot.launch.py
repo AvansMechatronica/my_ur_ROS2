@@ -19,6 +19,7 @@ def generate_launch_description():
     ur_type = LaunchConfiguration("ur_type")
     robot_ip = LaunchConfiguration("robot_ip")
     use_mock_hardware = LaunchConfiguration("use_mock_hardware")
+    gripper_com_port = LaunchConfiguration("gripper_com_port")
     declared_arguments = []
     declared_arguments.append(
         DeclareLaunchArgument(
@@ -55,6 +56,13 @@ def generate_launch_description():
             description="Start robot with mock hardware mirroring command to its states.",
         )
     )
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "gripper_com_port",
+            default_value="/dev/ttyUSB0",
+            description="Serial port used by the gripper hardware interface.",
+        )
+    )
 
     return LaunchDescription(
         declared_arguments
@@ -75,6 +83,7 @@ def generate_launch_description():
                     "ur_type": ur_type,
                     "robot_ip": robot_ip,
                     "use_mock_hardware": use_mock_hardware,
+                    "gripper_com_port": gripper_com_port,
                     "tf_prefix": "",
                     "rviz_config_file": PathJoinSubstitution(
                         [
