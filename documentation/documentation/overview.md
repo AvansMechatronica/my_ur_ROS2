@@ -13,3 +13,6 @@ De template is toegespitst op een UR5 robot, maar kan zonder al te veel inspanni
 :::{important}
 Gebruik voor het besturen van een fysiek robot altijd `native ubuntu` en `ROS2` versies. Gebruik geen `docker` of `virtual machine` om een fysieke robot te besturen.
 :::
+
+## Referenties
+[https://docs.universal-robots.com/Universal_Robots_ROS2_Documentation/index.html](https://docs.universal-robots.com/Universal_Robots_ROS2_Documentation/index.html)
