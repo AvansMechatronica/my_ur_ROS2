@@ -17,9 +17,7 @@
   <xacro:arg name="simulation_controllers" default="" />
   <xacro:arg name="ros_namespace" default="" />
   <xacro:arg name="use_fake_gripper" default="true" />
-  <xacro:arg name="use_robotiq_gripper" default="true" />
-  <xacro:arg name="use_epick_suction_cup" default="false" />
-  <xacro:arg name="gripper_com_port" default="/dev/ttyUSB0" />
+
 
   <link name="world" />
 
@@ -31,10 +29,8 @@
     kinematics_parameters_file="$(arg kinematics_parameters_file)"
     physical_parameters_file="$(arg physical_parameters_file)"
     visual_parameters_file="$(arg visual_parameters_file)"
-    use_fake_gripper="$(arg use_fake_gripper)"
-    use_robotiq_gripper="$(arg use_robotiq_gripper)"
-    use_epick_suction_cup="$(arg use_epick_suction_cup)"
-    gripper_com_port="$(arg gripper_com_port)"
+    use_fake_gripper="true"
+
 
   >
     <origin xyz="0 0 0" rpy="0 0 0" />

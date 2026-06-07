@@ -126,11 +126,11 @@
       <xacro:include filename="$(find robotiq_description)/urdf/ur_to_robotiq_adapter.urdf.xacro" />
       <xacro:include filename="$(find robotiq_description)/urdf/robotiq_2f_85_macro.urdf.xacro" />
 
-      <xacro:ur_to_robotiq prefix="" parent="tool0" child="gripper_side_joint" />
+      <xacro:ur_to_robotiq prefix="" parent="tool0" child="gripper_side_link" />
       <xacro:robotiq_gripper
         name="RobotiqGripperHardwareInterface"
         prefix=""
-        parent="gripper_side_joint"
+        parent="gripper_side_link"
         use_fake_hardware="${use_fake_gripper}"
         com_port="${gripper_com_port}">
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -142,9 +142,9 @@
       <xacro:include filename="$(find robotiq_description)/urdf/ur_to_robotiq_adapter.urdf.xacro" />
       <xacro:include filename="$(find epick_description)/urdf/epick_single_suction_cup.xacro" />
 
-      <xacro:ur_to_robotiq prefix="" parent="tool0" child="gripper_side_joint" />
+      <xacro:ur_to_robotiq prefix="" parent="tool0" child="gripper_side_link" />
       <xacro:epick_single_suction_cup
-        parent="gripper_side_joint"
+        parent="gripper_side_link"
         origin_xyz="0 0 0"
         origin_rpy="0 0 0"
         use_fake_hardware="${use_fake_gripper}"
