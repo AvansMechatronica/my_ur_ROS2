@@ -30,6 +30,7 @@
   <depend>ur_dashboard_msgs</depend>
   <depend>ur_calibration</depend>
   <depend>ur_msgs</depend>
+  <depend>ur_simulation_gz</depend>
 
   <export>
     <build_type>ament_cmake</build_type>

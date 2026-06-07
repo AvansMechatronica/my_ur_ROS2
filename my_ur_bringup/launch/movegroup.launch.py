@@ -3,11 +3,11 @@ import os
 import yaml
 from ament_index_python.packages import get_package_share_directory
 from moveit_configs_utils import MoveItConfigsBuilder
-from moveit_configs_utils.launches import generate_move_group_launch
 
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.conditions import IfCondition
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
@@ -21,7 +21,14 @@ def generate_launch_description():
         "my_ur", package_name="my_ur_moveit_config"
     ).to_moveit_configs()
 
-    move_group_ld = generate_move_group_launch(moveit_config)
+    move_group_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution(
+                [FindPackageShare("my_ur_moveit_config"), "launch", "move_group.launch.py"]
+            )
+        ),
+        launch_arguments={"use_sim_time": use_sim_time}.items(),
+    )
 
     rviz_config = PathJoinSubstitution(
         [FindPackageShare("my_ur_bringup"), "rviz", "rviz_config.rviz"]
@@ -66,9 +73,10 @@ def generate_launch_description():
         condition=IfCondition(launch_servo),
     )
 
-    ld = LaunchDescription(move_group_ld.entities)
+    ld = LaunchDescription()
     ld.add_action(DeclareLaunchArgument("use_sim_time", default_value="false"))
     ld.add_action(DeclareLaunchArgument("launch_servo", default_value="false"))
+    ld.add_action(move_group_launch)
     ld.add_action(rviz_node)
     ld.add_action(servo_node)
     return ld
