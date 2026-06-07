@@ -45,6 +45,7 @@ from launch.substitutions import (
 def generate_launch_description():
     ur_type = LaunchConfiguration("ur_type")
     robot_ip = LaunchConfiguration("robot_ip")
+    use_sim_time = LaunchConfiguration("use_sim_time")
 
     use_mock_hardware = LaunchConfiguration("use_mock_hardware")
     mock_sensor_commands = LaunchConfiguration("mock_sensor_commands")
@@ -111,6 +112,13 @@ def generate_launch_description():
     )
     declared_arguments.append(
         DeclareLaunchArgument(
+            "use_sim_time",
+            default_value="false",
+            description="Use simulation (Gazebo) clock if true.",
+        )
+    )
+    declared_arguments.append(
+        DeclareLaunchArgument(
             "kinematics_parameters_file",
             default_value=PathJoinSubstitution(
                 [
@@ -152,7 +160,7 @@ def generate_launch_description():
                 package="robot_state_publisher",
                 executable="robot_state_publisher",
                 output="both",
-                parameters=[robot_description],
+                parameters=[robot_description, {"use_sim_time": use_sim_time}],
             ),
         ]
     )

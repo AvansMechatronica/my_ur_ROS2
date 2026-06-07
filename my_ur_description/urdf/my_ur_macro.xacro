@@ -116,25 +116,33 @@
       <origin xyz="0 0 0" rpy="0 0 ${pi}" />
     </xacro:ur_robot>
   </xacro:macro>
-
-  <!-- Robotiq Gripper -->
-  <!-- Import macros -->
+  
+  <!-- Arguments for gripper hardware configuration -->
   <xacro:arg name="use_fake_hardware" default="true" />
   <xacro:arg name="com_port" default="/dev/ttyUSB0" />
-  <!--
+
+  <!-- Robotiq Gripper -->
+<!--
+  <xacro:include filename="$(find robotiq_description)/urdf/ur_to_robotiq_adapter.urdf.xacro" />
+  <xacro:ur_to_robotiq prefix="" parent="tool0" child="gripper_side_joint" />
+
   <xacro:include filename="$(find robotiq_description)/urdf/robotiq_2f_85_macro.urdf.xacro" />
-  <xacro:robotiq_gripper name="RobotiqGripperHardwareInterface" prefix="" parent="tool0" use_fake_hardware="$(arg use_fake_hardware)" com_port="$(arg com_port)">
+  <xacro:robotiq_gripper name="RobotiqGripperHardwareInterface" prefix="" parent="gripper_side_joint" use_fake_hardware="$(arg use_fake_hardware)" com_port="$(arg com_port)">
       <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:robotiq_gripper>
-  -->
-  
-  <!-- Import Epick Suction Cup macro -->
-  <!--
-  <xacro:include filename="$(find epick_description)/urdf/epick_single_suction_cup.xacro"/>
-  -->
-  <!-- Epick Suction Cup -->
-  <!--
-  <xacro:epick_single_suction_cup parent="tool0" use_fake_hardware="false"/>
-  -->
+--> 
 
+  <!-- Import Epick Suction Cup macro -->
+<!--
+  <xacro:include filename="$(find robotiq_description)/urdf/ur_to_robotiq_adapter.urdf.xacro" />
+  <xacro:ur_to_robotiq prefix="" parent="tool0" child="gripper_side_joint" />
+
+  <xacro:include filename="$(find epick_description)/urdf/epick_single_suction_cup.xacro"/>
+  <xacro:epick_single_suction_cup
+    parent="gripper_side_joint"
+    origin_xyz="0 0 0"
+    origin_rpy="0 0 0"
+    use_fake_hardware="$(arg use_fake_hardware)"
+    usb_port="$(arg com_port)" />
+-->
 </robot>
