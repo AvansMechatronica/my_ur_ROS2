@@ -10,6 +10,32 @@ def generate_launch_description():
 	description_file = LaunchConfiguration("description_file")
 	launch_servo = LaunchConfiguration("launch_servo")
 
+	declared_arguments = []
+	declared_arguments.append(
+		DeclareLaunchArgument("ur_type", default_value="ur5")
+	)
+	declared_arguments.append(
+		DeclareLaunchArgument("launch_servo", default_value="false")
+	)
+	declared_arguments.append(
+		DeclareLaunchArgument(
+			"description_file",
+			default_value=PathJoinSubstitution(
+				[
+					FindPackageShare("my_ur_bringup"),
+					"urdf",
+					"my_ur_controlled_simulator.urdf.xacro",
+				]
+			),
+		)
+	)
+	declared_arguments.append(
+		DeclareLaunchArgument(
+			"use_mock_hardware",
+			default_value="true",
+			description="Start robot with mock hardware mirroring command to its states.",
+		)
+	)
 
 	ur_sim_control_launch = IncludeLaunchDescription(
 		PythonLaunchDescriptionSource(
@@ -44,19 +70,4 @@ def generate_launch_description():
 		}.items(),
 	)
 
-
-
-	return LaunchDescription(
-		[
-			DeclareLaunchArgument("ur_type", default_value="ur5"),
-			DeclareLaunchArgument("launch_servo", default_value="false"),
-			DeclareLaunchArgument(
-				"description_file",
-				default_value=PathJoinSubstitution(
-					[FindPackageShare("my_ur_bringup"), "urdf", "my_ur_controlled_simulator.urdf.xacro"]
-				),
-			),
-			ur_sim_control_launch,
-			movegroup_launch,
-		]
-	)
+	return LaunchDescription(declared_arguments + [ur_sim_control_launch, movegroup_launch])
