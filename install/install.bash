@@ -30,7 +30,21 @@ else
     git clone -b $ROS_DISTRO https://github.com/UniversalRobots/Universal_Robots_ROS2_Description.git
 fi
 
+cd "$current_dir"
+if ros2 pkg list | grep -q "pymoveit2"; then
+    echo "pymoveit2 packages alredy installed"
+else
+    echo "cloning xarm pymoveit2"
+    git clone https://github.com/AvansMechatronica/pymoveit2.git ../../pymoveit2 
+fi
 
+cd "$current_dir"
+if ros2 pkg list | grep -q "my_moveit_python"; then
+    echo "my_moveit_python packages alredy installed"
+else
+    echo "cloning my_moveit_python"
+    git clone https://github.com/AvansMechatronica/my_moveit_python.git ../../my_moveit_python 
+fi
 
 # Build the workspace
 colcon build --symlink-install

@@ -12,7 +12,7 @@
     visual_parameters_file
     use_fake_gripper:=false
     gripper_com_port:=/dev/ttyUSB0
-    use_robotiq_gripper:=false
+    use_robotiq_gripper:=true
     use_epick_suction_cup:=false
 
     ">
