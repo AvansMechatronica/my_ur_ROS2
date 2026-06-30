@@ -107,7 +107,7 @@
 
   <link name="baseplate_link">
     <visual>
-      <origin xyz="0 0 0.0" />
+      <!-- <origin xyz="0 0 0.0" /> -->
       <geometry>
         <box size="0.7 1.1 0.03" />
       </geometry>
@@ -150,7 +150,8 @@
   </link>
 
   <joint name="mountingplate_joint" type="fixed">
-    <origin xyz="-0.2 0.0 0.021" />
+    <!-- <origin xyz="-0.1025 -0.3775 0.021" /> -->
+    <origin xyz="-0.1025 -0.3775 0.021" rpy="0.0 0.0 1.57079633"/>
     <parent link="baseplate_link" />
     <child link="mountingplate_link" />
   </joint>
@@ -165,20 +166,113 @@
   </joint>
 
 
-  <xacro:arg name="use_fake_hardware" default="true" />
+  <xacro:arg name="use_fake_hardware" default="false" />
   <xacro:arg name="com_port" default="/dev/ttyUSB0" />
+
+
+  <link name="simple_cam_holder_link">
+
+    <visual>
+      <geometry>
+        <cylinder radius="0.04" length="0.007"/>
+      </geometry>
+    </visual>
+
+    <!-- <collision>
+      <geometry>
+        <cylinder radius="0.04" length="0.007"/>
+      </geometry>
+    </collision> -->
+
+    <!-- <inertial>
+      <mass value="0.2"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.001" ixy="0" ixz="0"
+              iyy="0.001" iyz="0"
+              izz="0.001"/>
+    </inertial> -->
+
+  </link>
+
+  <joint name="simple_cam_holder_joint" type="fixed">
+    <parent link="tool0"/>
+    <child link="simple_cam_holder_link"/>
+
+    <!-- Adjust as needed -->
+    <origin xyz="0 0 -0.003" rpy="0 0 0"/>
+  </joint>
+
+
+  <link name="achterwand_link">
+
+    <visual>
+      <geometry>
+        <box size="0.67 0.02 0.87"/>
+      </geometry>
+      <material name="off_white">
+        <color rgba="0.9 0.9 0.9 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.67 0.02 0.87"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="achterwand_joint" type="fixed">
+      <parent link="baseplate_link"/>
+      <child link="achterwand_link"/>
+
+      <!-- Adjust as needed -->
+      <origin xyz="0 0.47 0.45"
+              rpy="0 0 0"/>
+  </joint>
+
+  <link name="top_link">
+
+    <visual>
+      <geometry>
+        <box size="0.02 0.3 0.02"/>
+      </geometry>
+      <material name="off_white">
+        <color rgba="0.9 0.9 0.9 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.02 0.3 0.02"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="top_joint" type="fixed">
+      <parent link="achterwand_link"/>
+      <child link="top_link"/>
+
+      <!-- Adjust as needed -->
+        <origin xyz="0 -0.17 0.43"
+          rpy="0 0 0"/>
+      <!-- <origin xyz="0 0.25 0.90"
+              rpy="0 0 0"/> -->
+  </joint>
+
+
+
+
 
 
   <!-- Robotiq Gripper -->
   <!-- Import macros -->
-  <!--
+  
   <xacro:include filename="$(find robotiq_description)/urdf/robotiq_2f_85_macro.urdf.xacro" />
-  -->
-  <!--
-  <xacro:robotiq_gripper name="RobotiqGripperHardwareInterface" prefix="" parent="tool0" use_fake_hardware="$(arg use_fake_hardware)" com_port="$(arg com_port)">
+
+  <xacro:robotiq_gripper name="RobotiqGripperHardwareInterface" prefix="" parent="simple_cam_holder_link" use_fake_hardware="$(arg use_fake_hardware)" com_port="$(arg com_port)">
       <origin xyz="0 0 0" rpy="0 0 0" />
   </xacro:robotiq_gripper>
-  -->
+  
   <!-- Import Epick Suction Cup macro -->
   <!--
   <xacro:include filename="$(find epick_description)/urdf/epick_single_suction_cup.xacro"/>
