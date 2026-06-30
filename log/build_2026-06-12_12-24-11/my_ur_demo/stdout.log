@@ -1,0 +1,35 @@
+running egg_info
+creating ../build/my_ur_demo/my_ur_demo.egg-info
+writing ../build/my_ur_demo/my_ur_demo.egg-info/PKG-INFO
+writing dependency_links to ../build/my_ur_demo/my_ur_demo.egg-info/dependency_links.txt
+writing entry points to ../build/my_ur_demo/my_ur_demo.egg-info/entry_points.txt
+writing requirements to ../build/my_ur_demo/my_ur_demo.egg-info/requires.txt
+writing top-level names to ../build/my_ur_demo/my_ur_demo.egg-info/top_level.txt
+writing manifest file '../build/my_ur_demo/my_ur_demo.egg-info/SOURCES.txt'
+reading manifest file '../build/my_ur_demo/my_ur_demo.egg-info/SOURCES.txt'
+writing manifest file '../build/my_ur_demo/my_ur_demo.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo/build
+creating /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo/build/lib
+creating /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo/build/lib/my_ur_demo
+copying my_ur_demo/__init__.py -> /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo/build/lib/my_ur_demo
+copying my_ur_demo/demo.py -> /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo/build/lib/my_ur_demo
+running install
+running install_lib
+creating /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo/lib/python3.12/site-packages/my_ur_demo
+copying /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo/build/lib/my_ur_demo/__init__.py -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo/lib/python3.12/site-packages/my_ur_demo
+copying /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo/build/lib/my_ur_demo/demo.py -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo/lib/python3.12/site-packages/my_ur_demo
+byte-compiling /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo/lib/python3.12/site-packages/my_ur_demo/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo/lib/python3.12/site-packages/my_ur_demo/demo.py to demo.cpython-312.pyc
+running install_data
+creating /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo/share/ament_index
+creating /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo/share/ament_index/resource_index
+creating /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo/share/ament_index/resource_index/packages
+copying resource/my_ur_demo -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo/share/ament_index/resource_index/packages
+copying package.xml -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo/share/my_ur_demo
+running install_egg_info
+Copying ../build/my_ur_demo/my_ur_demo.egg-info to /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo/lib/python3.12/site-packages/my_ur_demo-0.0.0-py3.12.egg-info
+running install_scripts
+Installing demo script to /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo/lib/my_ur_demo
+writing list of installed files to '/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo/install.log'

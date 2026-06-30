@@ -1,0 +1,9 @@
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur/CMakeFiles/uninstall.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur/CMakeFiles/my_ur_uninstall.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur/CMakeFiles/test.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur/CMakeFiles/edit_cache.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur/CMakeFiles/rebuild_cache.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur/CMakeFiles/list_install_components.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur/CMakeFiles/install.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur/CMakeFiles/install/local.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur/CMakeFiles/install/strip.dir

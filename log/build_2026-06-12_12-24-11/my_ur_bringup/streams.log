@@ -1,0 +1,50 @@
+[1.416s] Invoking command in '/home/student2/my_ur_ws/src/my_ur_ROS2/my_ur_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/my_ur_bringup build --build-base /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_bringup/build install --record /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_bringup/install.log --single-version-externally-managed install_data
+[1.726s] running egg_info
+[1.726s] creating ../build/my_ur_bringup/my_ur_bringup.egg-info
+[1.750s] writing ../build/my_ur_bringup/my_ur_bringup.egg-info/PKG-INFO
+[1.750s] writing dependency_links to ../build/my_ur_bringup/my_ur_bringup.egg-info/dependency_links.txt
+[1.750s] writing requirements to ../build/my_ur_bringup/my_ur_bringup.egg-info/requires.txt
+[1.750s] writing top-level names to ../build/my_ur_bringup/my_ur_bringup.egg-info/top_level.txt
+[1.750s] writing manifest file '../build/my_ur_bringup/my_ur_bringup.egg-info/SOURCES.txt'
+[1.797s] reading manifest file '../build/my_ur_bringup/my_ur_bringup.egg-info/SOURCES.txt'
+[1.798s] writing manifest file '../build/my_ur_bringup/my_ur_bringup.egg-info/SOURCES.txt'
+[1.798s] running build
+[1.798s] running build_py
+[1.798s] creating /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_bringup/build
+[1.798s] creating /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_bringup/build/lib
+[1.799s] creating /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_bringup/build/lib/my_ur_bringup
+[1.799s] copying my_ur_bringup/__init__.py -> /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_bringup/build/lib/my_ur_bringup
+[1.799s] running install
+[1.804s] running install_lib
+[1.828s] creating /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/lib/python3.12/site-packages/my_ur_bringup
+[1.828s] copying /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_bringup/build/lib/my_ur_bringup/__init__.py -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/lib/python3.12/site-packages/my_ur_bringup
+[1.829s] byte-compiling /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/lib/python3.12/site-packages/my_ur_bringup/__init__.py to __init__.cpython-312.pyc
+[1.829s] running install_data
+[1.829s] creating /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/ament_index
+[1.829s] creating /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/ament_index/resource_index
+[1.829s] creating /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/ament_index/resource_index/packages
+[1.829s] copying resource/my_ur_bringup -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/ament_index/resource_index/packages
+[1.829s] copying package.xml -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup
+[1.830s] creating /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/launch
+[1.830s] copying launch/real_robot.launch.py -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/launch
+[1.830s] copying launch/demo.launch.py -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/launch
+[1.830s] copying launch/load_robot_description.launch.py.kanweg -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/launch
+[1.830s] copying launch/movegroup.launch.py -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/launch
+[1.830s] copying launch/servo.launch.py -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/launch
+[1.830s] copying launch/simulation.launch.py -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/launch
+[1.830s] creating /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/launch/support
+[1.830s] copying launch/support/my_ur_moveit.launch.py -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/launch/support
+[1.830s] copying launch/support/bringup_control.launch.py -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/launch/support
+[1.830s] creating /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/rviz
+[1.831s] copying rviz/rviz_config.rviz -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/rviz
+[1.831s] creating /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/worlds
+[1.831s] copying worlds/empty_world.world -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/worlds
+[1.831s] creating /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/urdf
+[1.831s] copying urdf/ur_gz.ros2_control.xacro -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/urdf
+[1.831s] creating /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/config
+[1.831s] copying config/ur_controllers.yaml -> /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/share/my_ur_bringup/config
+[1.831s] running install_egg_info
+[1.856s] Copying ../build/my_ur_bringup/my_ur_bringup.egg-info to /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/lib/python3.12/site-packages/my_ur_bringup-0.0.0-py3.12.egg-info
+[1.856s] running install_scripts
+[2.012s] writing list of installed files to '/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_bringup/install.log'
+[2.047s] Invoked command in '/home/student2/my_ur_ws/src/my_ur_ROS2/my_ur_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/my_ur_bringup build --build-base /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_bringup/build install --record /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_bringup/install.log --single-version-externally-managed install_data

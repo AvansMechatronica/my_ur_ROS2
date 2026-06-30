@@ -1,0 +1,9 @@
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_moveit_config/CMakeFiles/uninstall.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_moveit_config/CMakeFiles/my_ur_moveit_config_uninstall.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_moveit_config/CMakeFiles/test.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_moveit_config/CMakeFiles/edit_cache.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_moveit_config/CMakeFiles/rebuild_cache.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_moveit_config/CMakeFiles/list_install_components.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_moveit_config/CMakeFiles/install.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_moveit_config/CMakeFiles/install/local.dir
+/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_moveit_config/CMakeFiles/install/strip.dir

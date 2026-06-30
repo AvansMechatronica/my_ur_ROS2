@@ -1,0 +1,16 @@
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/lib/my_ur_demo_cpp/demo
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/ament_index/resource_index/package_run_dependencies/my_ur_demo_cpp
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/ament_index/resource_index/parent_prefix_path/my_ur_demo_cpp
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/environment/ament_prefix_path.sh
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/environment/ament_prefix_path.dsv
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/environment/path.sh
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/environment/path.dsv
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/local_setup.bash
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/local_setup.sh
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/local_setup.zsh
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/local_setup.dsv
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/package.dsv
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/ament_index/resource_index/packages/my_ur_demo_cpp
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/cmake/my_ur_demo_cppConfig.cmake
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/cmake/my_ur_demo_cppConfig-version.cmake
+/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/package.xml

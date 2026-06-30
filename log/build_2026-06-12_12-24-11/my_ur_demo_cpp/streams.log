@@ -1,0 +1,92 @@
+[0.541s] Invoking command in '/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student2/my_ur_ws/install/robotiq_app:/home/student2/my_ur_ws/install/my_ur_demo:/home/student2/my_ur_ws/install/my_ur_bringup:/home/student2/teachbot_ws/install/teachbot_ros:/home/student2/teachbot_ws/install/teachbot_recorder:/home/student2/teachbot_ws/install/teachbot_follower:/home/student2/teachbot_ws/install/teachbot_description:/home/student2/ros2_industrial_ws/install/urdf_basics:/home/student2/ros2_industrial_ws/install/transferframes:/home/student2/ros2_industrial_ws/install/template_package_python:/home/student2/ros2_industrial_ws/install/ros_industrial_utilities:/home/student2/ros2_industrial_ws/install/ros_industrial_support:/home/student2/ros2_industrial_ws/install/range_sensor:/home/student2/ros2_industrial_ws/install/node_demo:/home/student2/ros2_industrial_ws/install/manipulation:/home/student2/ros2_industrial_ws/install/fanuc_robots:/home/student2/xarm_ws/install/uf_ros_lib:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/student2/my_ur_ws/src/my_ur_ROS2/my_ur_demo_cpp -DCMAKE_INSTALL_PREFIX=/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp
+[0.593s] -- The C compiler identification is GNU 13.3.0
+[0.648s] -- The CXX compiler identification is GNU 13.3.0
+[0.663s] -- Detecting C compiler ABI info
+[0.746s] -- Detecting C compiler ABI info - done
+[0.755s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.756s] -- Detecting C compile features
+[0.756s] -- Detecting C compile features - done
+[0.765s] -- Detecting CXX compiler ABI info
+[0.863s] -- Detecting CXX compiler ABI info - done
+[0.872s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.872s] -- Detecting CXX compile features
+[0.873s] -- Detecting CXX compile features - done
+[0.878s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.098s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.267s] -- Found moveit_ros_planning_interface: 2.12.4 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+[1.428s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+[1.524s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.551s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.587s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.622s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.051s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.171s] -- Found parameter_traits: 0.7.1 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[2.259s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.269s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.375s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.396s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.420s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.557s] -- Found rclcpp_lifecycle: 28.1.18 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[2.612s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+[2.708s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.708s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.967s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+[3.028s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+[3.065s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+[3.133s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.270s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.270s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/student2/my_ur_ws/src/my_ur_ROS2/my_ur_demo_cpp/include>
+[3.270s] -- Configured cppcheck exclude dirs and/or files: 
+[3.272s] -- Added test 'lint_cmake' to check CMake code style
+[3.274s] -- Added test 'uncrustify' to check C / C++ code style
+[3.274s] -- Configured uncrustify additional arguments: 
+[3.276s] -- Added test 'xmllint' to check XML markup files
+[3.279s] -- Configuring done (2.7s)
+[3.312s] -- Generating done (0.0s)
+[3.319s] -- Build files have been written to: /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo_cpp
+[3.332s] Invoked command in '/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student2/my_ur_ws/install/robotiq_app:/home/student2/my_ur_ws/install/my_ur_demo:/home/student2/my_ur_ws/install/my_ur_bringup:/home/student2/teachbot_ws/install/teachbot_ros:/home/student2/teachbot_ws/install/teachbot_recorder:/home/student2/teachbot_ws/install/teachbot_follower:/home/student2/teachbot_ws/install/teachbot_description:/home/student2/ros2_industrial_ws/install/urdf_basics:/home/student2/ros2_industrial_ws/install/transferframes:/home/student2/ros2_industrial_ws/install/template_package_python:/home/student2/ros2_industrial_ws/install/ros_industrial_utilities:/home/student2/ros2_industrial_ws/install/ros_industrial_support:/home/student2/ros2_industrial_ws/install/range_sensor:/home/student2/ros2_industrial_ws/install/node_demo:/home/student2/ros2_industrial_ws/install/manipulation:/home/student2/ros2_industrial_ws/install/fanuc_robots:/home/student2/xarm_ws/install/uf_ros_lib:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/student2/my_ur_ws/src/my_ur_ROS2/my_ur_demo_cpp -DCMAKE_INSTALL_PREFIX=/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp
+[3.333s] Invoking command in '/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student2/my_ur_ws/install/robotiq_app:/home/student2/my_ur_ws/install/my_ur_demo:/home/student2/my_ur_ws/install/my_ur_bringup:/home/student2/teachbot_ws/install/teachbot_ros:/home/student2/teachbot_ws/install/teachbot_recorder:/home/student2/teachbot_ws/install/teachbot_follower:/home/student2/teachbot_ws/install/teachbot_description:/home/student2/ros2_industrial_ws/install/urdf_basics:/home/student2/ros2_industrial_ws/install/transferframes:/home/student2/ros2_industrial_ws/install/template_package_python:/home/student2/ros2_industrial_ws/install/ros_industrial_utilities:/home/student2/ros2_industrial_ws/install/ros_industrial_support:/home/student2/ros2_industrial_ws/install/range_sensor:/home/student2/ros2_industrial_ws/install/node_demo:/home/student2/ros2_industrial_ws/install/manipulation:/home/student2/ros2_industrial_ws/install/fanuc_robots:/home/student2/xarm_ws/install/uf_ros_lib:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo_cpp -- -j8 -l8
+[3.381s] [ 50%] [32mBuilding CXX object CMakeFiles/demo.dir/src/demo.cpp.o[0m
+[4.482s] In file included from [01m[K/home/student2/my_ur_ws/src/my_ur_ROS2/my_ur_demo_cpp/src/demo.cpp:8[m[K:
+[4.482s] [01m[K/opt/ros/jazzy/include/moveit_ros_planning/moveit/robot_model_loader/robot_model_loader.h:50:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[4.482s]    50 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[4.482s]       |                                                                             [01;36m[K^[m[K
+[7.260s] In file included from [01m[K/home/student2/my_ur_ws/src/my_ur_ROS2/my_ur_demo_cpp/src/demo.cpp:9[m[K:
+[7.260s] [01m[K/opt/ros/jazzy/include/moveit_core/moveit/planning_interface/planning_interface.h:50:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[7.260s]    50 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[7.260s]       |                                                                             [01;36m[K^[m[K
+[7.884s] In file included from [01m[K/home/student2/my_ur_ws/src/my_ur_ROS2/my_ur_demo_cpp/src/demo.cpp:10[m[K:
+[7.884s] [01m[K/opt/ros/jazzy/include/moveit_core/moveit/planning_scene/planning_scene.h:50:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[7.885s]    50 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[7.885s]       |                                                                             [01;36m[K^[m[K
+[7.885s] In file included from [01m[K/home/student2/my_ur_ws/src/my_ur_ROS2/my_ur_demo_cpp/src/demo.cpp:11[m[K:
+[7.885s] [01m[K/opt/ros/jazzy/include/moveit_core/moveit/kinematic_constraints/utils.h:50:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[7.885s]    50 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[7.885s]       |                                                                             [01;36m[K^[m[K
+[7.899s] In file included from [01m[K/home/student2/my_ur_ws/src/my_ur_ROS2/my_ur_demo_cpp/src/demo.cpp:14[m[K:
+[7.899s] [01m[K/opt/ros/jazzy/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[7.899s]    51 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[7.899s]       |                                                                             [01;36m[K^[m[K
+[11.212s] [100%] [32m[1mLinking CXX executable demo[0m
+[11.513s] [100%] Built target demo
+[11.522s] Invoked command in '/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student2/my_ur_ws/install/robotiq_app:/home/student2/my_ur_ws/install/my_ur_demo:/home/student2/my_ur_ws/install/my_ur_bringup:/home/student2/teachbot_ws/install/teachbot_ros:/home/student2/teachbot_ws/install/teachbot_recorder:/home/student2/teachbot_ws/install/teachbot_follower:/home/student2/teachbot_ws/install/teachbot_description:/home/student2/ros2_industrial_ws/install/urdf_basics:/home/student2/ros2_industrial_ws/install/transferframes:/home/student2/ros2_industrial_ws/install/template_package_python:/home/student2/ros2_industrial_ws/install/ros_industrial_utilities:/home/student2/ros2_industrial_ws/install/ros_industrial_support:/home/student2/ros2_industrial_ws/install/range_sensor:/home/student2/ros2_industrial_ws/install/node_demo:/home/student2/ros2_industrial_ws/install/manipulation:/home/student2/ros2_industrial_ws/install/fanuc_robots:/home/student2/xarm_ws/install/uf_ros_lib:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo_cpp -- -j8 -l8
+[11.523s] Invoking command in '/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student2/my_ur_ws/install/robotiq_app:/home/student2/my_ur_ws/install/my_ur_demo:/home/student2/my_ur_ws/install/my_ur_bringup:/home/student2/teachbot_ws/install/teachbot_ros:/home/student2/teachbot_ws/install/teachbot_recorder:/home/student2/teachbot_ws/install/teachbot_follower:/home/student2/teachbot_ws/install/teachbot_description:/home/student2/ros2_industrial_ws/install/urdf_basics:/home/student2/ros2_industrial_ws/install/transferframes:/home/student2/ros2_industrial_ws/install/template_package_python:/home/student2/ros2_industrial_ws/install/ros_industrial_utilities:/home/student2/ros2_industrial_ws/install/ros_industrial_support:/home/student2/ros2_industrial_ws/install/range_sensor:/home/student2/ros2_industrial_ws/install/node_demo:/home/student2/ros2_industrial_ws/install/manipulation:/home/student2/ros2_industrial_ws/install/fanuc_robots:/home/student2/xarm_ws/install/uf_ros_lib:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo_cpp
+[11.530s] -- Install configuration: ""
+[11.530s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/lib/my_ur_demo_cpp/demo
+[11.530s] -- Set non-toolchain portion of runtime path of "/home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/lib/my_ur_demo_cpp/demo" to ""
+[11.530s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/ament_index/resource_index/package_run_dependencies/my_ur_demo_cpp
+[11.531s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/ament_index/resource_index/parent_prefix_path/my_ur_demo_cpp
+[11.531s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/environment/ament_prefix_path.sh
+[11.531s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/environment/ament_prefix_path.dsv
+[11.531s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/environment/path.sh
+[11.531s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/environment/path.dsv
+[11.531s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/local_setup.bash
+[11.531s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/local_setup.sh
+[11.531s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/local_setup.zsh
+[11.531s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/local_setup.dsv
+[11.531s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/package.dsv
+[11.531s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/ament_index/resource_index/packages/my_ur_demo_cpp
+[11.532s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/cmake/my_ur_demo_cppConfig.cmake
+[11.532s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/cmake/my_ur_demo_cppConfig-version.cmake
+[11.532s] -- Installing: /home/student2/my_ur_ws/src/my_ur_ROS2/install/my_ur_demo_cpp/share/my_ur_demo_cpp/package.xml
+[11.533s] Invoked command in '/home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student2/my_ur_ws/install/robotiq_app:/home/student2/my_ur_ws/install/my_ur_demo:/home/student2/my_ur_ws/install/my_ur_bringup:/home/student2/teachbot_ws/install/teachbot_ros:/home/student2/teachbot_ws/install/teachbot_recorder:/home/student2/teachbot_ws/install/teachbot_follower:/home/student2/teachbot_ws/install/teachbot_description:/home/student2/ros2_industrial_ws/install/urdf_basics:/home/student2/ros2_industrial_ws/install/transferframes:/home/student2/ros2_industrial_ws/install/template_package_python:/home/student2/ros2_industrial_ws/install/ros_industrial_utilities:/home/student2/ros2_industrial_ws/install/ros_industrial_support:/home/student2/ros2_industrial_ws/install/range_sensor:/home/student2/ros2_industrial_ws/install/node_demo:/home/student2/ros2_industrial_ws/install/manipulation:/home/student2/ros2_industrial_ws/install/fanuc_robots:/home/student2/xarm_ws/install/uf_ros_lib:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/student2/my_ur_ws/src/my_ur_ROS2/build/my_ur_demo_cpp
